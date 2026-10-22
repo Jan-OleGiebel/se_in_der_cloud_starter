@@ -100,7 +100,7 @@ onBeforeUnmount(() => {
           Hamburg Weather Dashboard
         </h1>
         <p class="text-neutral-600 dark:text-neutral-400 mt-1 max-w-2xl text-sm sm:text-base">
-          Real-time meteorological indicators, 24-hour trends with interactive line charts, 7-day projections, and comprehensive data points.
+          Cloud app demo hosted in the IONOS-Cloud with real-time meteorological data, 24-hour trends with interactive line charts, 7-day projections, and comprehensive data points.
         </p>
       </div>
 
