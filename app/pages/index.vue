@@ -6,7 +6,8 @@ import type { OpenMeteoResponse } from '~/types/weather'
 const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=53.5511&longitude=9.9937&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,weather_code,wind_speed_10m,surface_pressure&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Europe%2FBerlin&forecast_days=7'
 
 const { data: weather, pending, error, refresh } = await useFetch<OpenMeteoResponse>(apiUrl, {
-  lazy: false
+  lazy: false,
+  server: false
 })
 
 const REFRESH_INTERVAL_SECONDS = 60
